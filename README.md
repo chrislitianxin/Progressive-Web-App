@@ -110,11 +110,11 @@ module.exports = {
 
  The implementation should follow the official documentation. There are however a few caveat to avoid if possible. 
 
-..* For firebase-messaging version 3.8.0, for unknown reason, it requires a service worker file to be named firebase-messaging-sw.js. I would suggest you put background message handler in the file because it needs to be in service worker context. Even if you do not have any content, you need to have firebase-messaging-sw.js as an empty file. Otherwise it could throw an error. 
-..* For implementation of message handlers when in focus, it should be as normal javascripts referenced in index.html as opposed to service-worker file. 
-..* For ```firebase.init() ``` copy paste the configuration you get from setting up the project in firebase: [console](https://console.firebase.google.com/) -> project -> setting -> Project settings -> cloud messaging
-..* Add this to your manifest.json  ```"gcm_sender_id": "103953800507", ``` regardless of the project you are working with, the "gcm_sender_id" remains the same.
-..* You will create your own server for application: [see detailed documentation here](https://firebase.google.com/docs/cloud-messaging/server) [sample]()
+* For firebase-messaging version 3.8.0, for unknown reason, it requires a service worker file to be named firebase-messaging-sw.js. I would suggest you put background message handler in the file because it needs to be in service worker context. Even if you do not have any content, you need to have firebase-messaging-sw.js as an empty file. Otherwise it could throw an error. 
+* For implementation of message handlers when in focus, it should be as normal javascripts referenced in index.html as opposed to service-worker file. 
+* For ```firebase.init() ``` copy paste the configuration you get from setting up the project in firebase: [console](https://console.firebase.google.com/) -> project -> setting -> Project settings -> cloud messaging
+* Add this to your manifest.json  ```"gcm_sender_id": "103953800507", ``` regardless of the project you are working with, the "gcm_sender_id" remains the same.
+* You will create your own server for application: [see detailed documentation here](https://firebase.google.com/docs/cloud-messaging/server) 
 
 
  ### Sending push notifications. 
