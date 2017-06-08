@@ -37,7 +37,7 @@ module.exports = {
 
             // runtime caching for specfic API calls, can be set to a few differnet mode. eg. networkFirst / cacheFirst
             runtimeCaching: [{
-                urlPattern: /https:\/\/robo-advisor-prototype\.firebaseio\.com\/.*\.json/,
+                urlPattern: /https:\/\/whateveryouputhere\.whatever\.com\/.*\.json/,
                 handler: 'networkFirst',
                 options: {
                     cache: {
