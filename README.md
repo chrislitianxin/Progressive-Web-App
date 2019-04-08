@@ -1,4 +1,7 @@
 # Progressive-Web-App
+
+* This is simply a personal note from exploring with PWA API released by Google for personal reference, it is not being maintained. *
+
 This is a guide for making your traditional web application into progressive web application by using swPrecache to auto generate service worker and using sw-toolbox for real-time caching. This is just to give your web application ability to load faster and have offline functionality with supported browser. 
 
 This is a summary of my personal attempt to build a progressive web app and noted a few problems encountered in the process because pwa is still a concept in development and evolving. Hopefully it could help you avoid being stuck on the same problem and spend more time on the content that actually matters. Personally, I believe progressive web application is the future to come, we will not rely on native mobile apps as much except for heavy gamings etc, PWA is much easier to maintain and develope.  
